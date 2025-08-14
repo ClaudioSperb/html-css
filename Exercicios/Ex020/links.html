@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children ( Filho)
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(255, 61, 47);
+            /* Nesse caso aqui, utilizamos visited, para marcar que o link ja foi clicado, nesse exemplo usei esse vermelho para demarcar que ja foi clicado*/
+        }
+        .principal:hover{
+            background-color: aqua;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+            /* o hover indica que ao passar o mouse por cima vai ter uma ação como mudar de cor, aparecer um texto e etc.*/
+        }
+        a:active{
+            color: blue;
+            /* a função do active é para quando clicar ele mudar a cor, indicando que esta clicando.*/
+        }
+        a::before{
+        content: '💀';
+
+        }
+        a::after{
+            content: 'Link';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgba(139, 0, 0, 0.308);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_self">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo " target="_self" class="principal">Canal do Youtube</a></li>
+        <!--Aqui nesse exemplo, coloquei uma class 'principal' para adicionar no a:hover. Sendo assim somente esse link ira ter as configurações desejadas-->
+        <li><a href="https://www.cursoemvideo.com/" target="_self">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

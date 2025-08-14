@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{
+            background-color: darkgray;
+            width: 300px;
+            height: 40px;
+            border: 10px inset blue;
+            padding: 10px;
+            margin: 10px 20px;
+            outline: 5px dashed violet;
+            text-align: center;
+        }
+        /* Box-size - no H1 seria o width e height.*/
+        
+        /*Nesse esxemplo utilizei um shorthand em Border e no Margin. na seguinte ordem: border-width, border-style e border-color.*/
+
+        a{
+            border: 5px solid red;
+            padding: 2px;
+            margin: 10px 5px;
+            outline: 5px dashed black;
+            background-color: darkcyan;
+            color: black;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        p{
+            font: normal normal 1.0em arial;
+        }
+        /* Usei aqui tbm o shorthand na fonte - font-style- font-weight - font-size e font-family.*/
+    </style>
+</head>
+<body>
+    <h1>Modelos de Caixas</h1>
+    <p>Assim como o h1, o parágrafo tambem é uma caixa estilo Box-Level. Mas os <a href="#">links são modelos de Box Inline-Level</a></p>
+</body>
+</html>

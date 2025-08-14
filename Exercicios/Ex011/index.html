@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Para teste, peguei uma imagem minha e da minha familia e coloquei em alguns tamanhos para testar nesse exercicio!!!!
+    </p>
+    <picture>
+        <source media="(max-width:450px )" srcset="imagem/foto-5.jpg" type="image/jpg">
+        <source media="(max-width: 650px)" srcset="imagem/foto-4.jpg" type="image/jpg">
+        <source media="(max-width: 850px)" srcset="imagem/foto-3.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-2.jpg" type="image/jpg">
+        <img src="imagem/foto-principal.JPG" alt="Foto principal">
+    </picture>
+    <!--Neste exercicio usei uma foto principal e usei a Tag Siurce media type com max-width para a imagem dinamica-->
+    <h2><a href="pag2.html" rel="self"><mark>Clique aqui</mark></a> e veja o exemplo com WIDTH 100%</h2>
+    <hr>
+    <h1>Midia no meu HTML5</h1>
+    <audio preload="metadata" controls loop>
+    <source src="midia/music.mp3" type="audio/mpeg">
+    </audio>
+     <p>Caso desejar, pode baixar esse Audio clicando no link a baixo!!</p>
+    <h2><market><a href="midia/music.zip">[DOWNLOAD]</a></market></h2>
+    <!--Recomendado utilizar o preload apos a abertura da tag AUDIO-->
+</body>
+</html>

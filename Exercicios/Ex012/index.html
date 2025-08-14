@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos WEB</title>
+</head>
+<body>
+    <style>
+        h3{
+            color: chocolate;
+        }
+    </style>
+    <h1>Inserindo Vídeos em HTML5 hospedados localmente</h1>
+    <p>Para inserir videos é necessario usar formatos adequados para WEB. Sendo assim usei o <b>HANDBRAKE</b> para otimizar o tamanho e ajustar os formatos dos videos que baixei no PEXEL!!!</p>
+    <video width="25%" poster="imagens/corujacapa.png" src="midea/videocoruja.mp4" controls autoplay></video>
+<!--Essa é a forma mais fácil de colocar um video, poém é recomendado que utilizamos a Tag VIDEO e os SRC em cada formato !-->
+<h2>Colocando videos em vários formatos</h2>
+<h3>Vídeo Estrela do Mar</h3>
+<video width="500" poster="imagens/Ccapavideo.png" controls autoplay loop>
+    <source src="midea/videomar.mp4" type="video/mp4">
+    <source src="midea/Videomar.webm" type="video/webm">
+    <source src="midea/Videocoruja.webm" type="video/webm">
+</video>
+<h2>Clicando em <a href="midea/midea.zip"><mark>-[DONLOAD VIDEOS]-</mark></a> , voce baixa em zip.</h2>
+<!--Nesses exemplos a cima, utilizamos os videos hospedados dentro do site-->
+<h1>Inserindo vídeos do Youtube !</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dr-0XYyafHc?si=cIZYZn_hxDRE_dgS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bxNYBnFygD0?si=-_H4u-dZT3EvbUnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2><b>Videos Elton Jeep</b></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XMs53YkyfwQ?si=Ec0rOE1FpOorUTDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--Nos videos incorporados do youtube usamos os dados do servidor externo-->
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/854724381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ARC&#039;TERYX PRESENTS: The Pass"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

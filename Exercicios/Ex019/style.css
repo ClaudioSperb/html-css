@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+h1{
+    font-weight: bold;
+    color: #fca311;
+}
+h1#principal{
+    text-shadow:1px 1px 3px #00000056;
+    text-align: center;
+}
+h2{
+    color: #14213d;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+.titulo{
+    background-color: #fca21163;
+    text-align: center;
+}
+.basico{
+    text-shadow:1px 1px 3px #5f5a5a;
+    font-weight: bold;
+}
+.intermediario{
+    text-shadow:1px 1px 3px #6e6767e0;
+    font-style: italic;
+}
+.avancado{
+color: #fca311;
+text-shadow: #fca211ad;
+}

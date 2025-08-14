@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Hover</title>
+    <style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }        
+    h1{
+        text-align: center;
+        text-shadow: 1px 1px 3px;
+    }
+    p{
+        text-align: justify;
+        font-weight: normal;
+        font-size: 2em;
+    }
+    div > p{
+        display: none;
+    }
+    div:hover > p{
+        display: block;
+    }
+    div{
+        font-size: 1.5em;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+
+
+    }
+    .texto2{
+        color: blue;
+    }
+    a:visited{
+        color: rgb(59, 58, 58);
+    }
+    a:hover{
+        text-decoration: underline;
+        color: rgb(255, 8, 0);
+        background-color: rgba(94, 57, 1, 0.288);
+    }
+    
+    a:active{
+        color: chartreuse;
+    }
+    a::after{
+        content: '[link]';
+        color: black;
+        font-size: 1.0em
+        
+    }
+    .site:hover{
+        background-color: black;
+    }
+    .especial::after{
+        content: '🤍';
+    }
+    .especial{
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <h1>Estudos com Hover</h1>
+    <p>Nesse exemplo a baixo, usei uma imagem escondida, ao passar o mouse por cima note que ela aparece !!!</p>
+    <div>
+        Descubra a imagem passando o mouse !!!
+        <p>
+            <img src="imagem/images.png" alt="Logo Conexão Criativa">
+        </p>
+    </div>
+    <h1 class="texto2">Testando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@rekreboqueseengates " target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.rekreboques.com" target="_blank" class="site">Site Oficial</a></li>
+        <li><a href="https://www.instagram.com/rekreboqueseengates/"  target="_blank">Redes social Oficial</a></li>
+
+    </ul>
+</body>
+</html>
