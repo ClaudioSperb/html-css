@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            /* Aqui coloquei o size de 100% vertical e 100% horizontal*/
+            background-size: 100% 100%;
+            /* a parte do container sempre vai ser com a position relative, no caso por regra ele ja vem com essa configuração.*/
+            position: relative;
+            /* Usei o height de 94vh pra utilizar a altura quase da tela toda*/
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            /* Aqui coloquei o size de 100% vertical e 100% horizontal*/
+            background-size: 100% 100%;
+            /* a parte do conteudo sempre vai ser com a position absolute*/
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* quando tu utiliza a posição absoluta, tu consegue configurar o left e o top.
+            Sempre utilizando os valores em porcentagem */
+            left: 50%;
+            top: 50%;
+
+            /* Para conseguir posicionar a imagem no centro, usamos o TRANSLATE, para criar uma transformação a imagem Quando coloca-se os valoeres negativos , ele move pra esquerda e pra cima, respectivamente. Valores positivos , para direita e para baixo. Os valores podem ser em % ou em px tambem*/
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

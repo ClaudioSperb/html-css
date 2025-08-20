@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-size: cover;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            Mais abaixo usei o shorthand para substituir todas essas propriedades.
+
+            */
+
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /* Aqui utilizei uma shorthand Background. A ordem fica 
+            color > image > position > repeat > [size] > attachment.
+            o SIZE não est funcionamento no momento, por isso coloquei a baixo ali do shorthand.
+            */
         }
 
         /* Sempre lembrando que para utilizar 100% da Viewport, tem que colocar o 100vh. pois o Body tem um espaço muito menos de altura*/
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
