@@ -1,1 +1,70 @@
 @charset "UTF8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    /* usando o small-caps, a letra fica maiúscula,porem a primeira letra fica com o tamanho maior, dando a sensação mais natural.*/
+
+    /*text-transform: uppercase; Essa é uma das opções de deixar as letras, nesse caso do h1, em maiúsculas.*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    /*Como eu quero que os dois links fiquem exatamente com a mesma configuração, nao precisaria colocar header a e footer a, mas para fins de conhecimento fiz dessa forma para ficar claro nas configurações de ambos*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    /*Como eu quero que os dois links fiquem exatamente com a mesma configuração, nao precisaria colocar header a e footer a, mas para fins de conhecimento fiz dessa forma para ficar claro nas configurações de ambos*/
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 00vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgb(36, 36, 36);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
