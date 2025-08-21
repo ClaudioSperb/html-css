@@ -1,24 +1,41 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
+
+:root{
+    --font1: verdana, geneva, tahoma, sans-serif;
+    --font2: 'Passion One', sans-serif;
+    --font3: 'Sriracha', cursive;
+}
+
+/*Aqui coloquei essa regra geral para que possamos utilizar todo o espaço da tela sem margens e espaçamentos.*/
+
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font1);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
     /* usando o small-caps, a letra fica maiúscula,porem a primeira letra fica com o tamanho maior, dando a sensação mais natural.*/
 
     /*text-transform: uppercase; Essa é uma das opções de deixar as letras, nesse caso do h1, em maiúsculas.*/
@@ -45,6 +62,8 @@ section{
     padding-bottom: 00vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -59,7 +78,8 @@ section.imagem{
 
 section.imagem > p{
     background-color: rgb(36, 36, 36);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
