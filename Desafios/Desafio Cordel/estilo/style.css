@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+/* As fontes sempre são colocadas a baixo da regra inicial do CSS.*/
 *{
     padding: 0px;
     margin: 0px;
