@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.575);
+        }
+
+        tr.linha{
+            background-color: aqua;
+        }
+
+        tr.linha6{
+            background-color: aquamarine;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado{
+            background-color: blue;
+        }
+
+        td.dado:hover{
+            background-color: rgb(77, 0, 10);
+            transition-duration: 0.5s;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela <ta></ta>
+            TABLE ROW = linha de tabela <tr></tr>
+                TABLE HEADER= cabeçalho de tabela
+                TABLE DATA = dado da tabela <td></td>
+    -->
+    <table>
+        <!--Sempre que for fazer as tabelas utiliza a propriedade <table></tabble>-->
+        <tr><!--primeira linha-->
+            <td>A1</td>
+            <td>B1</td>  <!--Células-->
+            <td>C1</td>
+        </tr>
+        <tr class="linha"><!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td><!--Células-->
+            <td>C2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>A3</td>
+            <td class="dado">B3</td><!--Células-->
+            <td>C3</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td><!--Células-->
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td>C5</td>
+        </tr>
+        <tr class="linha6">
+            <td>A6</td>
+            <td>B6</td>
+            <td>C6</td>
+        </tr>
+        <!--Não é obrigatório fazer o fechamento da tag td, basta colocar <td>
+            
+            SEMPRE RESPEITAR A HIERARQUIA para que tenha organização dos dados.-->
+    </table>
+</body>
+</html>
