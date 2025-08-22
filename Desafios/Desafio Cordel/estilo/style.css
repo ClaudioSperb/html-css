@@ -84,7 +84,9 @@ section.imagem{
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.774);
     background-attachment: fixed;
-    /*Para imagem ficar fixada usamos o attachmert dentro da propriedade section.imagem.*/
+    /*Para imagem ficar fixada usamos o attachmert dentro da propriedade section.imagem, esse efeito é conhecido como PARALLAX SIMPLES*/
+
+    /* Usamos aqui tambem o box-shodow inset, que faz uma sombra interna.*/
 }
 
 section.imagem > p{
@@ -92,6 +94,8 @@ section.imagem > p{
     display: inline-block;
     padding: 5px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+
+    /* Aqui colocamos o inline-block para que o conteudo vire um caixa, e fique no tamanho que colocamos os paragrafos.*/
 }
 
 section#img01{
