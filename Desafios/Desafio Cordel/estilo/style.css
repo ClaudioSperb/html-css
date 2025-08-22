@@ -8,7 +8,7 @@
     padding: 0px;
     margin: 0px;
 }
-
+/*Aqui coloquei essa regra geral para que possamos utilizar todo o espaço da tela sem margens e espaçamentos.*/
 
 :root{
     --font1: verdana, geneva, tahoma, sans-serif;
@@ -16,7 +16,6 @@
     --font3: 'Sriracha', cursive;
 }
 
-/*Aqui coloquei essa regra geral para que possamos utilizar todo o espaço da tela sem margens e espaçamentos.*/
 
 html, body{
     min-height: 100vh;
@@ -39,6 +38,8 @@ header > h1{
     /* usando o small-caps, a letra fica maiúscula,porem a primeira letra fica com o tamanho maior, dando a sensação mais natural.*/
 
     /*text-transform: uppercase; Essa é uma das opções de deixar as letras, nesse caso do h1, em maiúsculas.*/
+
+    /* Foi colocado o 10vw em font size para que a fonte se adapte dependendo do tamanho da tela*/
 }
 
 header > p{
@@ -59,11 +60,17 @@ header a:hover, footer a:hover{
 
 section{
     padding-top: 10vh;
-    padding-bottom: 00vh;
+    padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
     font-size: 3.5vw;
+}
+
+/* Foi colocado o 3.5vw em font size para que a fonte se adapte dependendo do tamanho da tela*/
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -74,12 +81,27 @@ section.normal{
 section.imagem{
     background-color: rgb(53, 53, 53);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.774);
+    background-attachment: fixed;
+    /*Para imagem ficar fixada usamos o attachmert dentro da propriedade section.imagem.*/
 }
 
 section.imagem > p{
-    background-color: rgb(36, 36, 36);
+    background-color: rgba(36, 36, 36, 0.452);
     display: inline-block;
     padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
 }
 
 footer{
