@@ -10,33 +10,18 @@
         }
 
         table{
-            width: 500px;
+            width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.575);
-        }
-
-        tr.linha{
-            background-color: aqua;
-        }
-
-        tr.linha6{
-            background-color: aquamarine;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: bottom;
         }
-
-        td.dado{
-            background-color: blue;
-        }
-
-        td:hover{
-            background-color: rgb(77, 0, 10);
-            transition-duration: 0.5s;
-            color: white;
-        }
+        
     </style>
 </head>
 <body>
@@ -54,31 +39,21 @@
             <td>B1</td>  <!--Células-->
             <td>C1</td>
         </tr>
-        <tr class="linha"><!--segunda linha-->
+        <tr><!--segunda linha-->
             <td>A2</td>
             <td>B2</td><!--Células-->
             <td>C2</td>
         </tr>
         <tr><!--terceira linha-->
             <td>A3</td>
-            <td class="dado">B3</td><!--Células-->
+            <td>B3</td><!--Células-->
             <td>C3</td>
         </tr>
         <tr><!--quarta linha-->
             <td>A4</td>
             <td>B4</td><!--Células-->
             <td>C4</td>
-        </tr>
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-            <td>C5</td>
-        </tr>
-        <tr class="linha6">
-            <td>A6</td>
-            <td>B6</td>
-            <td>C6</td>
-        </tr>
+      
         <!--Não é obrigatório fazer o fechamento da tag td, basta colocar <td>
             
             SEMPRE RESPEITAR A HIERARQUIA para que tenha organização dos dados.-->
