@@ -18,10 +18,15 @@
         td{
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
-            vertical-align: bottom;
+            text-align: center; /* Alinhamento horizontal*/
+            vertical-align: center;/*Alinhamento vertical*/
         }
+
+        /* Aqui utilizei o vertical-align para alinhamento vertical, as propriedades são top, middle e botton.*/
         
+        .numero{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -47,12 +52,12 @@
         <tr><!--terceira linha-->
             <td>A3</td>
             <td>B3</td><!--Células-->
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr><!--quarta linha-->
             <td>A4</td>
             <td>B4</td><!--Células-->
-            <td>C4</td>
+            <td class="numero">C4</td>
       
         <!--Não é obrigatório fazer o fechamento da tag td, basta colocar <td>
             
