@@ -13,7 +13,22 @@
             width: 500px;
             border-collapse: collapse;
         }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: darkgrey;
+            padding: 10px;
+        }
 
+        tbody > tr:nth-child(even){
+            background-color: #dddddd; /* 2n */
+        }
+        /* Aqui utilizei uma pseudoclasse, onde entre parenteses coloquei 2n, que quer dizer que a cada 2 linhas , 1 será em cor cinza. Tambem tem a opçao de colocar even - par ou odd - impar*/
+
+        tbody >tr:nth-child(odd){
+            background-color: white; /* 2n-1*/
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -22,6 +37,12 @@
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+
+        thead  {
+            position: sticky; /* Grudar*/
+            top: -1px;
+            /* Aqui em Thead, no cabeçalho, utilizei a position sticky para que a area head da tabela fique fixo na hora da rolagem. Colocando top -1px pra grudar na parte de cima - top*/
         }
 
         td.num{
@@ -34,6 +55,9 @@
     <!--
     Anatomia para tabelas grandes
     TABLE
+        CAPTION ( Legenda da Tabela)
+        Nesse Caption nao vai TD, TR ou TH
+
         THEAD - TH
             TR, TD, TH
         TBODY - TD
@@ -42,10 +66,14 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <!--Aqui defini o Escopo da Tabela, dizendo pro HTML que os dados da coluna com o titulo Estado e População, são no sentido Coluna.-->
+
+                <!--Tambem coloquei um widht de 50px, para que fique mais justo os dados somente na coluna de população-->
             </tr>
         </thead>
         <tbody>
@@ -156,10 +184,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
+                <!--Aqui utilizei o Row, para indicar que o sentido do escopo, total de habitantes, é na linha da Tabela-->
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque sed cumque quae eum eveniet quidem culpa officia minima maiores, maxime explicabo, autem, qui ad facere? Quae rem voluptatum deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam, sed corporis perspiciatis, adipisci error autem assumenda maiores placeat nulla fugiat, aut eos quidem qui ullam ratione voluptatum? Porro, hic quidem quasi corrupti modi ex, reprehenderit aliquid velit reiciendis necessitatibus commodi vero neque tempora error ullam suscipit asperiores id ipsum aliquam nemo voluptate. Deserunt, fugit! Hic nemo facere sunt iusto dignissimos debitis cupiditate nostrum laborum deleniti reprehenderit? Aperiam facilis molestias voluptatibus, laudantium eum dolorum ab vel esse, exercitationem nulla laborum ex ratione sit ducimus eaque magnam accusamus? Aliquid fuga veniam porro nihil dolor est ab, cum dignissimos eius voluptate exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste placeat odio temporibus magni corrupti nam? Odio totam itaque corrupti ratione? Molestias nostrum hic beatae sint modi porro dignissimos possimus. Cum beatae vel fugiat a amet reprehenderit fuga voluptates mollitia recusandae, repellendus corporis soluta nam voluptate unde perferendis ipsam minima veniam perspiciatis, blanditiis dicta molestias architecto labore voluptatem. Itaque explicabo et possimus provident fugiat, corrupti non deserunt nobis. Laborum earum dolorum esse nemo odio corporis error? Repudiandae a architecto eveniet illo in praesentium sapiente facilis nulla, illum fugiat id atque ab accusantium eum obcaecati dolorum porro, unde placeat quam necessitatibus. Expedita incidunt ipsa error molestias harum. Obcaecati quidem beatae fugit dolore aspernatur, voluptatem quas et tempore laboriosam ex consectetur magni reprehenderit nihil sapiente eveniet quae animi, repellat molestias magnam minus commodi. Quae molestiae soluta perspiciatis obcaecati tempora maiores fugit sapiente quas amet, nesciunt quo, corrupti eligendi sequi minima doloribus praesentium. Laboriosam ad ipsam error quos cumque nihil at, quas amet expedita, reprehenderit assumenda dolorum quis distinctio voluptate dicta sunt aut. Porro itaque corporis quisquam voluptatum at tempora sed? Animi repellat veniam fugiat officia dolores laboriosam similique ipsa ullam corrupti dicta nihil, enim quis iste harum assumenda doloribus odio esse dolorum? Fugiat consectetur blanditiis nam suscipit inventore a sed error, magnam in voluptatum hic reiciendis sit non ipsam ullam laboriosam voluptates dolorum rem exercitationem! Molestiae voluptatibus aliquid, ducimus quaerat molestias sapiente magni facilis maxime pariatur! Ducimus expedita facere dignissimos perspiciatis eos sint doloremque neque assumenda totam beatae quisquam officiis, nisi harum et quod aut sed sequi sapiente. Facere, eveniet ab ea mollitia est cumque cum reiciendis optio, voluptatem perferendis saepe officiis suscipit magni pariatur explicabo quibusdam maxime obcaecati eaque commodi accusamus minima porro. Quidem dolorem suscipit necessitatibus, saepe reiciendis ducimus! Aut veritatis quasi natus a exercitationem, odio expedita modi voluptatibus magni explicabo blanditiis, similique incidunt maxime facilis neque minima. Minus necessitatibus optio accusamus iure aliquid recusandae molestiae fugiat? Voluptate omnis ut temporibus harum distinctio corporis nihil eum soluta! Deleniti vel autem in tenetur voluptatum alias eaque voluptatem nostrum officiis, necessitatibus modi dignissimos vitae quod nobis enim quia dicta sit cupiditate provident facere voluptate ad? Odio harum voluptatum eveniet? Asperiores minus deleniti a fugit rem pariatur eveniet, tempore beatae neque tenetur quibusdam commodi assumenda eligendi distinctio totam. Nam sit explicabo ea dolorem hic deleniti ratione autem aliquid nulla fugiat. Omnis voluptatum sequi obcaecati hic? Assumenda, dolores fugiat nisi quibusdam, pariatur laboriosam adipisci cum officia soluta similique natus aliquam at debitis, delectus minus dolor tenetur nam sit voluptatibus. Illo quo autem reiciendis illum? Repellat culpa vitae enim voluptas maiores cumque quasi voluptatibus, cupiditate voluptatum perferendis laboriosam ullam eos fugiat ducimus dolorem ex praesentium molestiae ratione iusto sed. Ad illo quos delectus natus. Natus unde sed hic eaque commodi ipsum quidem quam nesciunt. Optio nisi, nesciunt fugit ratione exercitationem deleniti at nemo perspiciatis repudiandae cumque vitae illo debitis iste porro commodi placeat est animi sed eius veritatis expedita magnam dolore! Ipsum consequuntur amet inventore itaque optio deserunt mollitia voluptates, officia quia quas reprehenderit doloremque magnam.</p>
 </body>
 </html>
