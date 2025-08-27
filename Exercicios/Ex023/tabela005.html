@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+        }
+
+        caption{
+            font-size: 3.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome{
+            background-color: aquamarine;
+        }
+
+        col.cidade{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>    
+<table>
+    <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+    </colgroup>
+
+    <!--Aqui abrimos a tag colgroup para que possamos adicionar a propriedade <col>, nesse caso nao tem o fechamento da tag, para que possamos fazer alterações em todas as colunas com mais facilidade.
+    
+    Pode ser colocado o Span para fazer alterações tbm, utilizando as mesclagens de células.
+
+    <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="2"> 
+        <col class="cidade">
+        <col class="cprof">
+    </colgroup>
+    Ali, na coluna cgroup coloquei para exemplo, tirando o sexo da tabela e adicionando o cgroup para exemplo
+    -->
+
+    <caption>Cadastros</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>Fernando</td>
+        <td>M</td>
+        <td>25</td>
+        <td>Mecânico</td>
+    </tr>
+        <tr>
+        <td>Elton</td>
+        <td>M</td>
+        <td>45</td>
+        <td>Supervisor de Loja</td>
+    </tr>
+        <tr>
+        <td>Claudio</td>
+        <td>M</td>
+        <td>35</td>
+        <td>Gerente</td>
+    </tr>
+        <tr>
+        <td>Marcia</td>
+        <td>F</td>
+        <td>51</td>
+        <td>Sistemas</td>
+    </tr>
+        <tr>
+        <td>Felipe</td>
+        <td>M</td>
+        <td>48</td>
+        <td>Sub-Gerente</td>
+    </tr>
+</table>
+</body>
+</html>
