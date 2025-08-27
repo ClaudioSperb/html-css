@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(228, 228, 228);
+        }
+
+        div#container{
+            overflow-x: auto; /* x de horizontal, y para vertical*/
+        }
+
+        /* O overflow é uma propriedade de estilo do CSS utilizada para tratar conteúdos que ultrapassam os limites de um elemento. O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem.
+
+        Apenas com essa configuração já é suficiente para tornar a nossa tabela responsiva. Na prática, quando essa tabela for aberta numa tela com uma largura inferior à   mesma, ela será "cortada" e exibida dentro de uma caixa  com barras de rolagem horizontal, usando o OVERFLOW-X, evitando o vazamento. */
+    </style>
+</head>
+<body>
+    <h1>Tabelas para telas pequenas</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt in quaerat recusandae fuga adipisci rerum nihil doloremque aut temporibus nesciunt, assumenda incidunt veritatis et suscipit dolores? Repellat libero illo nihil pariatur, ullam molestiae accusantium nemo culpa corporis necessitatibus fugiat nesciunt, incidunt tempora! Hic temporibus at tempore minima corporis, quas molestiae ex ducimus saepe qui maiores officia doloremque fuga expedita. Ut nesciunt aperiam animi optio eum voluptates placeat, nostrum voluptatum id rerum eius quis incidunt reiciendis neque vel voluptatem sequi, laboriosam architecto assumenda. Accusamus, odit deleniti? Corporis cumque debitis, in nemo ducimus officiis perspiciatis consequatur corrupti quia, repellat, necessitatibus illo veritatis?</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv 40"</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Sansung Galaxi S20</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Ipad Mini</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Playstatio 4</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
