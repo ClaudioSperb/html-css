@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 450px;
+
+            border: 2px solid black;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.712);
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Pagina 001</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Pagina 002</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Pagina 003</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quod eligendi magni ad minus, adipisci quia corporis deserunt accusantium, molestiae enim modi totam dolorem facilis, voluptatibus nesciunt magnam! Dolores pariatur error, sapiente eaque amet nulla et enim, commodi, ipsum ut assumenda quam voluptatum repudiandae rem est voluptate eius non tenetur ratione aperiam quod? Dolores veritatis nam voluptas sapiente tenetur temporibus sunt? Possimus sint cupiditate nisi, ab architecto, itaque explicabo eaque laborum quam nesciunt, repudiandae alias quas dicta ex corporis deleniti repellat! Rerum alias magni nobis dicta, architecto, esse officia nam repellat reprehenderit at perspiciatis commodi voluptates quos, veritatis voluptas obcaecati.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções a cima!!</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, dolorum vero consequatur maiores dolore alias odit cupiditate deleniti quibusdam facere tenetur iusto laboriosam accusamus asperiores saepe fugit eligendi magni enim?</p><img src='imagens/gol.png'>">
+        <p>Infelizmente seu navegador nao consegue abrir esse conteudo!!!</p>
+    </iframe>
+
+    <!--ALi no srcdoc='' utilzei um ex como exemplo. Não precisa colocar nada se nao quiser, eu coloquei para que quando abra o site, apareça aquele ex ao abrir.-->
+
+    <!--Para que consigamos abrir essas paginas usando os links, em target, colocamos o nome que escolhemos dentro da tag iframe, utilazando a propriedade name="frame" no caso desse exemplo-->
+
+    <!--Utilizei um id "tela" para ficar melhor de organizar as coisas. Sempre que quiser colocar um link interno pra rodar dentro do iframe, tem que colocar o " NAME" para conseguir lincar no target da tag a dos links!!!!!! o src fica vazio mesmo ali dentro do iframe!-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil numquam harum error libero est pariatur, esse quae laudantium dolorem incidunt porro quam, tempora nesciunt quasi corrupti consectetur illo eligendi asperiores odit laboriosam? Illum, incidunt nostrum maiores repellendus, eius odit quibusdam vel praesentium aliquam cupiditate exercitationem? Tempore voluptate quaerat quae libero iusto, aliquid, sapiente commodi quia eius dolor voluptatem atque odio magnam perspiciatis vel corporis quod ea modi. Voluptatem corporis sit eaque dicta facilis ea accusamus harum. Sint minima voluptatibus inventore suscipit iusto minus optio rerum, ad placeat iure veritatis officia aliquam, autem voluptates beatae odit tempore incidunt in cupiditate est saepe doloremque ipsam! Quas eligendi pariatur vel, minus harum delectus, ex repellendus dolores quod doloremque cum! Quo, magni doloribus?</p>
+</body>
+</html>

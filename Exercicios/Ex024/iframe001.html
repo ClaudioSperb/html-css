@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.438);
+        }
+
+
+        /* Caso fizermos as configurações dos iframe, no css, fica valendo as configyrações das css, ela é soberana aos que forem colocadas dentro da tag*/
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <!--Por padrão um iframe tem 150 px de largura por 300px de altura-->
+    <!--Os paramentros aceitos dentro do iframe, apos o frameborder, é widht e height e scrolling, para questoes da rolgem do site-->
+    <p>
+        Acesso o site
+
+        <iframe src="https://www.rekreboques.com" frameborder="0" scrolling="no">
+        <a href="https://www.rekreboques.com" target="_blank"></a>
+        </iframe> 
+        
+        para conhecer nossos produtos e serviços
+
+        <!--Aqui colocamos um link abaixo do iframe, para que tenha a opção de que caso o navegador não reconheça o iframe, ele fique com o link de opçao para o usuario-->
+    </p>
+    <p>
+        Encontre produtos e novidades tbm aqui
+        <iframe src="https://www.ekmanacessorios.com.br" frameborder="0" scrolling="no">
+        <a href="https://www.ekmanacessorios.com.br" target="_blank">Ekman acessorios oficial</a>
+        </iframe>
+
+        Na Ekman Acessorios
+    </p>
+</body>
+</html>
