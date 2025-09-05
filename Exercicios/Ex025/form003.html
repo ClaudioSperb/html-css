@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            border: 1px solid black;
+            width: 350px;
+            padding: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            border-radius: 10px;
+            margin: auto;
+        }
+        h1{
+            display: block;
+            width: 300px;
+            border: 1px solid black;
+    
+            padding: 10px;
+            margin: auto;
+
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            background-image: linear-gradient(to bottom, rgb(141, 141, 141), rgba(255, 255, 255, 0.527));
+
+        }
+
+        div{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste de Formulários</h1>
+    </div>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--Aqui utilizamos o method - get para fins de estudo.-->
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" placeholder="Nome do Aluno" autocomplete="name">
+            <!--Aqui utilizamos o autocomplete - nome, para ele identificar somente o nome e deixar como sugestao.e colocamos o Placeholder - para deixar uma sugestao fixada na caixa-->
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="10"> 
+        </p>
+        <p>
+            <label for="idata">Data de Cadastro</label>
+            <input type="date" name="Data" id="idata" required value="2020-01-01">
+            <!--Aqui colocamos a propriedade Value - para deixar um valor de referencia na caixa, nesse exemplo deixamos na data na seguinte ordem - ano, mes e dia.-->
+        </p>
+        <p>
+            <label for="inota">Nota do Aluno</label>
+            <input type="number" name="nota" id="inota" required min="0" max="10" placeholder="0 a 10" step="0.1" value="1">
+            <!--Aqui utilizamos o step - para identificar de quanto em quanto ele vai mudar o valor ali, nesse exemplo foi 0.1, então ele vai aceitar valores de 0.1 a 10.-->
+        </p>
+        <p>
+            <label for="imes">Período de Avaliação</label>
+            <input type="month" name="mes" id="imes" >
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
