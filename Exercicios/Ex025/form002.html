@@ -14,25 +14,44 @@
             width: 300px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
             border: 1px solid black;
+            border-radius: 10px;
             padding: 10px;
             margin: auto;
         }
 
         h1{
+            display: block;
+            width: 300px;
+            border: 1px solid black;
+    
+            padding: 10px;
+            margin: auto;
+
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+            background-image: linear-gradient(to bottom, rgb(141, 141, 141), rgba(255, 255, 255, 0.527));
+
+            
+        }
+
+        div{
+            margin-bottom: 10px;
         }
     </Style>
 </head>
 <body>
-    <h1>Teste com Formulários</h1>
-    <form action="cadastro.php" method="POST">
+    <div>
+        <h1>Teste com Formulários</h1>
+    </div>
+    <form action="cadastro.php" method="POST" autocomplete="off">
     <p>
         <label for="iusu">Usuário: </label>
-        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome do cliente" autocomplete="username">
     </p>
     <p>
         <label for="isen">Senha: </label>
-        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20">
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="senha do usuario">
     </p>
     <p>
         <input type="submit" value="Enviar">
