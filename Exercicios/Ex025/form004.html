@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            width: 350px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.699);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get">
+<fieldset>
+    <!--Usamos o fieldset para criar um grupo de campo, e logo a baixo o legend para criar um titulo do grupo-->
+    <legend>Cadastro</legend>
+    <p>
+        <label for="imail">E-mail:</label>
+        <input type="email" name="mail" id="imail" required autocomplete="email">
+    </p>
+    <p>
+        <label for="itelefone">Tefefone:</label>
+        <input type="tel" name="telefone" id="itelefone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx">
+        <!--Estudar sobre as RegEx-->
+
+        <!-- um pattern sempre comça com '^' e termina com '$' -->
+         
+        <!--Aqui utilizamos a propriedade pattern para conseguirmos utilizar as expressões regulares, que ajudam o usuário a colocar os dados corretos na medida do possivel.-->
+    </p>
+</fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="limpar">
+</p>
+
+    </form>
+</body>
+</html>
