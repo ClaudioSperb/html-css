@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.575);
+        }
+
+        .estilosmusicais{
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexm" value="M">
+            <label for="sexm">Masculino</label><br>
+            <input type="radio" name="sexo" id="sexf" value="F">
+            <label for="sexf">Feminino</label>
+        </fieldset>
+
+        <!-- No input estilo RADIO, colocamos sempre o mesmo 'nome' para que o ususario consiga escolher a opção sem ficar marcados as escolhas anteriores. SOMENTE NO INPUT RADIO -->
+
+        <!-- Aqui utilizamos tbm, dentro 'radio' - o termo 'value= "M ou F"' para que quando os dados forem para o destino venha com o resumo da opçao marcada. -->
+
+        <fieldset class="estilosmusicais">
+            <legend>Estilos Musicais Preferidos</legend>
+            <input type="checkbox" name="rock" id="irock">
+            <label for="irock">Rock</label><br>
+            <input type="checkbox" name="funk" id="ifunk">
+            <label for="ifunk">Funk</label><br>
+            <input type="checkbox" name="rap" id="irap">
+            <label for="irap">Rap</label><br>
+            <input type="checkbox" name="forro" id="iforro">
+            <label for="iforro">Forró</label><br>
+            <input type="checkbox" name="pagode" id="ipagode">
+            <label for="ipagode">Pagode</label><br>
+        </fieldset>
+        <!-- Aqui utilzamos o input 'checkbox', sempre fique atento no 'name' e no 'id' de cada opção. Utilize sempre o Label, para que no celular fique mais fácil apertar na opção desejada! -->
+    
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="limpar">
+    </p>
+    </form>
+</body>
+</html>
