@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            background-color: rgba(179, 179, 179, 0.5);
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.363);
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        fieldset.foto{
+            width: 500px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.363);
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php'" method="post">
+        <fieldset>
+            <p>
+                <label for="icor">Selecione a Cor:</label>
+                <input type="color" name="Cor" id="icor">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <p>
+                <label for="inivel">Nivel de Satisfação</label>
+                <input type="range" name="nivel" id="inivel">
+            </p>
+        </fieldset>
+        <fieldset class="foto">
+            <legend>Adicione uma foto para o Perfil</legend>
+            <p>
+                <label for="ifoto">Foto de Perfil</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <!-- Para a utilização do input'FILE', é necessário alterar o method para 'post', para conseguirmos upar arquivos acima de 3000 bytes. E por segurança, pois fotos são dados e arquivos sensíveis -->
+        </fieldset>
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="limpar">
+    </p>
+    </form>
+</body>
+</html>
