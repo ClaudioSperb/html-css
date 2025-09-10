@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    text-align: center;
+    content: 'Esse impressão foi gerada através do exercício de Mideas Queries do Curso em video !!!';
+}
+
+/* Aqui para o menu nao aparecer na hora da impressão, colocamos 'Display= none'. */
