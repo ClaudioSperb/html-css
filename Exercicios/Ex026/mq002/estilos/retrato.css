@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
-/* Configuaração em pé ( retrato - portraid )*/
+/* Configurações de pé ( portrait ) */
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: left bottom;
+}
+/* Aqui utilizamos o left bottom para que a imagem em modo retrato fique fixada na parte esquerda e a baixo da tela */
