@@ -1,3 +1,95 @@
 @charset "UTF-8";
 
 /* Todas as demais medias */
+/* Typical Device Breakpoints
+
+Os breakpoints típicos de dispositivos são valores em pixels usados no CSS para ajustar layouts em diferentes tamanhos de tela, mas podem se desatualizar rapidamente. Um conjunto comum de breakpoints para um design mobile-first seria: telas pequenas até 576px, tablets de 576px a 992px, desktops de 992px a 1200px e telas maiores que 1200px. No entanto, o ideal é definir os breakpoints com base nas necessidades do seu projeto e nos dispositivos que os usuários utilizam. 
+
+
+Telas pequenas - Até 600px
+Celulares - 600px a 762px
+Tablets - 762px a 992px
+Desktop/pc - 992px a 1200px
+Tvs ( Telas Grandes ) - 1200px ...xxx
+*/
+
+/* Nao fizemos de Celular pois no style.css, onde aplicamos o mobile first, ja tem as configurações para telas pequenas */
+
+@media print { /* IMPRESSÃO*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: 'Essa impressão foi personalizada por Claudio Sperb';
+        text-decoration: overline;
+        
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    /* Aqui utilizamos essas configurações pois na impressão nao faz sentido e nem imprimi um back-ground, por isso deixamos mais adequado nessas declarações. */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) /* TABLETS*/{
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+        img#phone{ display: none;}
+        img#tablet{ display: block;}
+        img#print{ display: none;}
+        img#pc{ display: none;}
+        img#tv{ display: none;}
+
+        main{
+            width: 500px;
+        }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) /* DESKTOP*/ {
+    body{
+        background-image: url(../imagens/back-pc.jpg);   
+    }
+
+        img#phone{ display: none;}
+        img#tablet{ display: none;}
+        img#print{ display: none;}
+        img#pc{ display: block;}
+        img#tv{ display: none;}
+
+        main{
+            width: 600px;
+        }
+}
+
+@media screen and (min-width: 1200px) /* TVS E TELAS MAIORES*/ {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+        img#phone{ display: none;}
+        img#tablet{ display: none;}
+        img#print{ display: none;}
+        img#pc{ display: none;}
+        img#tv{ display: block;}
+
+    main{
+        width: 750px;
+    }
+}
+
+/* Utilizamos esses displays em todos os @media, para que possamos deixar aparecendo o icone desejado em cada caso. */
