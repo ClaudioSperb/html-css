@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
+    }
+    /* Aqui escondemos o menu dando um min-width para que em telas a cima de 768 ele nao apareça em forma de haburguer, e sim como configuramos a baixo */
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+    /* Aqui colocamos o menu e os itens do menu como block e inline block para que o menu fique um do lado do outro. */
+
+    main{
+        width: 770px;
+    }
+    /* Aqui utilizamos o width em 770px para que em telas muitos grandes, ele nao fique largo demais a ponto de que a leitura fique comprometida. */
+}
