@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centralizado</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(to right, rgb(43, 43, 92), rgb(91, 91, 99));
+        }
+
+        main{
+            width: 100vw;
+            height: 100vh;
+
+            background-color: lightblue;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            background-color: lightslategray;
+            width: 200px;
+            height: 200px;
+        }
+
+        section h1{
+            padding: 10px;
+        }
+
+        /* Nesse exemplo utilizamos tags semanticas. O main, section. Nesse exemplo o Main é o pai e a Section é o Filho, logo colocamos o Display flex no main. */
+
+        /* Para centralizar, basta colocar o jsutify-content e o align-items = 'centro' */
+
+        /* Lembrando que por padrão o flex-flow é 'row nowrap' */
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Faça seu Login</h1>
+        </section>
+    </main>
+</body>
+</html>
