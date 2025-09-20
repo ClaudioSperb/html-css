@@ -9,6 +9,7 @@
 
             background-color: aquamarine;
             display: flex;
+            flex-flow: row wrap;
 
             /* No container sempre será o display: "Flex" */
         }
@@ -18,7 +19,7 @@
             background-color: rgba(165, 42, 42, 0.651);
             color: white;
             border: 1px solid black;
-            flex: auto;
+            flex-basis: 150px;
             text-align: center;
 
             /* O Item, os filhos no caso, sempre serão o Flex: "Auto" - ou outra ramificação da propriedade Flex. */
@@ -29,12 +30,12 @@
 <body>
     <div class="container">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item"> Outro Conteudo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">Conteudo um pouco maior</div>
         <div class="item">E</div>
         <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Conteudo maior ainda com mais espaço</div>
     </div>
 </body>
 </html>
