@@ -9,8 +9,11 @@
 
             background-color: aquamarine;
             display: flex;
+            height: 400px;
+            flex-flow: row wrap;
+            align-items: center;
 
-            /* No container sempre será o display: "Flex" */
+
         }
 
         div.item{
@@ -18,23 +21,51 @@
             background-color: rgba(165, 42, 42, 0.651);
             color: white;
             border: 1px solid black;
-            flex: auto;
             text-align: center;
+            padding: 40px;
 
-            /* O Item, os filhos no caso, sempre serão o Flex: "Auto" - ou outra ramificação da propriedade Flex. */
 
+
+        }
+
+        div#i1{
+            align-self: flex-end;
+        }
+
+        div#i2{
+            align-self: center;
+        }
+
+        div#i3{
+            align-self: stretch;
+        }
+
+        div#i4{
+            align-self: auto;
+        }
+
+        div#i5{
+            align-self: center;
+        }
+
+        div#i6{
+            align-self: flex-end;
+        }
+
+        div#i7{
+           align-self: flex-end;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>
