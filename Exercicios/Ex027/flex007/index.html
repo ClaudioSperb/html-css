@@ -21,21 +21,52 @@
             border: 1px solid black;
             padding: 20px;
             text-align: center;
+            padding: 20px;
 
             /* O Item, os filhos no caso, sempre serão o Flex: "Auto" - ou outra ramificação da propriedade Flex. */
 
+
+            
+        }
+
+        div#i1{
+            order: 5;
+        }
+
+        div#i2{
+            order: -3;
+        }
+
+        div#i3{
+            order: 0;
+        }
+
+        div#i4{
+            order: 9;
+        }
+
+        div#i5{
+            order: -2;
+        }
+
+        div#i6{
+            order: 4;
+        }
+
+        div#i7{
+        order: 1;    
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>

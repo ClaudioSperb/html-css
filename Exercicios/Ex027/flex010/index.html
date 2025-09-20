@@ -8,13 +8,9 @@
         div.container{
 
             background-color: aquamarine;
-            height: 500px;
             display: flex;
-            flex-flow: row wrap;
-            align-content: space-between;
-        
 
-            /* Utilizamos o 'aligne-contente', quando o flex-flow esta como wrap ou wrap-reverse!!! */
+            /* No container sempre será o display: "Flex" */
         }
 
         div.item{
@@ -22,9 +18,8 @@
             background-color: rgba(165, 42, 42, 0.651);
             color: white;
             border: 1px solid black;
-            padding: 40px;
+            flex: auto;
             text-align: center;
-            
 
             /* O Item, os filhos no caso, sempre serão o Flex: "Auto" - ou outra ramificação da propriedade Flex. */
 
@@ -40,12 +35,6 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
     </div>
 </body>
 </html>
