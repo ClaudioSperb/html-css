@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1em;
+    background-color: lightgrey;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+ /* Aqui utilizamos o space-between para que os itens dentro do nosso container, o nav e o h1, fiquem nas extremidades do nosso eixo principal, o main-axis. */
+}
+
+header > h1{
+    flex: 0 0 200px;
+
+/* Aqui usamos o flex-basis, cologando grow '0' e shrink '0' e o basis com 200px fazendo com que o nosso titulo fique não flexivel, então ele nao diminui e nem cresce. */
+}
+
+header > nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+
+    /* Aqui colocamos o display flex dentro do nosso container, fazendo com que tenhamos um container dentro do outro. Fazendo com que o nosso menu fique flexivel e sempre com a quebra no flex-end.  */
+}
+
+header > nav >a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+
+    background-color: black;
+    color: white;
+    
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.507);
+}
