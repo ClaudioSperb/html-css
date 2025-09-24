@@ -13,9 +13,15 @@ body{
 
 }
 
-p, h1, h2{
+p{
     margin-bottom: 10px;
     text-align: justify;
+}
+
+h1, h2{
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5em;
 }
 
 header,section.normal{
@@ -25,4 +31,53 @@ header,section.normal{
 section.flex-content{
     padding: 20px;
     background-color: rgb(150, 148, 148);
+
+    display: flex;
+    flex-flow:column nowrap;
+
+    /* Esse é o Pai */
+    /* Usamos o column para que os article fiquem um em cima do outro */
+    
+}
+
+/* Aqui do Article text-media e mdia-text, colocamos como flex tambem. Utilizamos um row wrap para que um fique com o texto e uma media em baixo e o outro com a media e o texto em baixo. */
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    
+}
+
+/* Quando colocados os articles como display flex, o texto e a media automaticamente ja ficam um do lado do outro, como se  fossem um container, ou seja, temos um container, e outros containers um dentro do outro. */
+
+article > div.text{
+    flex: 1 1 400px;
+}
+
+article > div.media{
+    flex: 1 0 400px;
+    
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+    width: 400px;
+
+    padding: 10px;
+}
+
+div.media > iframe{
+    display: block;
+    margin: auto;
+
+    width: 90%;
 }
