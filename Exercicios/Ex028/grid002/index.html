@@ -7,19 +7,18 @@
     <style>
         div.container{
             border: 3px solid blue;
-            
+            text-align: center;
             height: 500px;
             
             display: grid;
-            grid-template-columns: 150px 150px 150px;
-            grid-template-rows: 100px 100px 100px;
             gap: 10px;
-            align-items: normal;
-            justify-items:normal;
-            align-content: end;
-            justify-content: space-evenly;
+            grid-template: repeat(3, 100px) / repeat(3, 150px);
+            /* Aqui simplificamos usando o repeat, lembrando que sempre a ordem é row e depois o column. */
+            place-items: normal normal;
+            place-content: center center;
 
-            text-align: center;
+            /* Lembrando que sempre a ordem vem o aligne e depois o justify */
+           
             
         }
 
