@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Prática</title>
+    <style>
+        div.container{
+            border: 3px solid blue;
+            text-align: center;      
+            display: grid;
+            gap: 10px;
+            grid-auto-rows: 100px;
+            grid-auto-columns: 150px;
+            grid-auto-flow: row;
+
+            /* Aqui colocamos o o 'grid-auto-flow', para alterar o fluxo da parte inplicita, ou seja , quando criado uma nova área dentro do container explicito, ele será criado e tera a configuração que for definida no 'grid-auto-row ou column' e no fluxo 'grid-auto-flow - row (Padrão) ou Column' */
+
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: 200px 50% 1fr 1fr;
+
+            place-items: normal normal;
+            place-content: normal center;
+
+            /* Lembrando que sempre a ordem vem o aligne e depois o justify */
+           
+            
+        }
+
+        div.itens{
+            border: 3px solid red;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.63);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+        <div class="itens">I</div>
+        <div class="itens">J</div>
+    </div>
+</body>
+</html>
