@@ -12,15 +12,15 @@
             gap: 10px;
             grid-auto-rows: 100px;
             grid-auto-columns: 150px;
-            grid-auto-flow: row;
+            grid-auto-flow: column;
 
             /* Aqui colocamos o o 'grid-auto-flow', para alterar o fluxo da parte inplicita, ou seja , quando criado uma nova área dentro do container explicito, ele será criado e tera a configuração que for definida no 'grid-auto-row ou column' e no fluxo 'grid-auto-flow - row (Padrão) ou Column' */
 
             grid-template-rows: repeat(3, 100px);
-            grid-template-columns: 200px 50% 1fr 1fr;
+            grid-template-columns: 100px 45% 1fr 1fr;
 
             place-items: normal normal;
-            place-content: normal center;
+            place-content: normal space-between;
 
             /* Lembrando que sempre a ordem vem o aligne e depois o justify */
            
