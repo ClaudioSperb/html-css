@@ -17,6 +17,8 @@
 
     gap: 5px;
     text-align: center;
+
+    /* Aqui colocamos as fractions na coluna e na linha principal. Colocamos o width e o heigth com 100% para utulizarmos a tela toda. */
 }
 
 .caixa{
